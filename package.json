@@ -16,7 +16,10 @@
     "dev": "ts-node-dev --respawn --transpile-only src/cli.ts",
     "start": "node dist/cli.js",
     "test": "node dist/cli.js --test",
-    "validate": "node scripts/validate-definitions.js"
+    "validate": "node scripts/validate-definitions.js",
+    "prepublishOnly": "npm run build && npm run validate",
+    "version": "npm run build && git add dist/",
+    "postversion": "git push && git push --tags"
   },
   "engines": {
     "node": ">=18"

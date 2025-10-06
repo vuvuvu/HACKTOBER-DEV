@@ -22,6 +22,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tested local package linking with `npm link`
 - Package ready for npm publishing with proper bin configuration
 
+### 🔄 Automation & Versioning
+- Added `prepublishOnly` script to ensure build and validation before publishing
+- Implemented automated version management with `version` and `postversion` scripts
+- Created GitHub Actions workflow for automated npm publishing on releases
+- Set up proper semantic versioning workflow with git tag automation
+
 ## [1.0.0] - 2025-10-06
 
 ### ✨ Added
