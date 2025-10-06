@@ -1,18 +1,10 @@
----
-title: Hacktober Dev - Hackiness Level Analyzer
-tags: hacktoberfest, cli, git analytics, hackiness measurement, developer assessment, code quality
-quick summary: Measure your hackiness level through comprehensive development habit analysis with this CLI tool
-date created: 2025-10-05
-date updated: 2025-10-06
----
-
 # 🎃 Hacktober Dev - Hackiness Level Analyzer
 
-**Discover your true hackiness level!** This CLI tool analyzes your Git repository to measure how "hacky" your development practices are, providing a comprehensive hackiness score based on your coding patterns, commit habits, and development workflow.
+__I am in two minds about hacktoberfest, hits on a desire to contribute to open source, and also my disdain for wasting others' time with hacky code or half baked solutions. Now in 2025 with AI, I feel that more than ever, it's important to be able to gauge how much of a hack you are as a developer, and not mistake advancement in LLM models with advancements in developer skills__
 
-> **Philosophy:** Hackiness isn't about bad code - it's about understanding your development patterns and finding the balance between speed and quality that works for you.
+``Discover your true hackiness level!`` This CLI tool analyzes your Git repository to measure how "hacky" your development practices are, providing a comprehensive hackiness score based on your coding patterns, commit habits, and development workflow.
 
-## 🎯 What is Hackiness?
+##  What is Hackiness? its about knowing thyself. 
 
 Your **Hackiness Level** is a comprehensive score (0-100) that measures:
 
@@ -183,4 +175,4 @@ This repository is licensed under the Apache 2.0 license. See [LICENSE](LICENSE)
 
 ---
 
-**Made with ❤️ for developers who embrace their inner hacker - Hacktoberfest 2024**
+###### **Made with 💻 for hack-developers - Hacktoberfest 2025**
