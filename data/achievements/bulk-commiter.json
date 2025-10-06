@@ -1,0 +1,12 @@
+{
+  "id": "bulk-committer",
+  "title": "Bulk Committer",
+  "description": "You tend to make large changes in single commits",
+  "requirement": {
+    "metric": "commit-length-analysis",
+    "value": 30,
+    "operator": "<="
+  },
+  "badge": "📦",
+  "category": "neutral"
+}

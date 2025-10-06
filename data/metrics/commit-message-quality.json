@@ -1,0 +1,8 @@
+{
+  "id": "commit-message-quality",
+  "name": "Commit Message Quality",
+  "description": "Analyzes the quality and informativeness of your commit messages",
+  "weight": 25,
+  "calculator": "calculateCommitMessageQuality",
+  "max": 25
+}

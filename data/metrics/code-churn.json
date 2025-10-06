@@ -1,0 +1,8 @@
+{
+  "id": "code-churn",
+  "name": "Code Churn",
+  "description": "Analyzes the ratio of lines added vs lines deleted to measure code stability",
+  "weight": 15,
+  "calculator": "calculateCodeChurn",
+  "max": 15
+}

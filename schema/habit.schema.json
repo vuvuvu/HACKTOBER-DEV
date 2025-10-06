@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Habit Detector Definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "description", "metric", "operator", "threshold", "guidance"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+$",
+      "description": "Unique identifier for this habit detector."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human‑friendly name."
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the behaviour this detector identifies."
+    },
+    "metric": {
+      "type": "string",
+      "description": "The metric this detector evaluates, e.g. pr.size.large_ratio."
+    },
+    "operator": {
+      "type": "string",
+      "enum": ["<", "<=", ">", ">="]
+    },
+    "threshold": {
+      "type": "number"
+    },
+    "guidance": {
+      "type": "string",
+      "description": "Constructive advice for improving this habit."
+    }
+  }
+}

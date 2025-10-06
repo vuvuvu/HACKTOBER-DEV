@@ -1,0 +1,8 @@
+{
+  "id": "commit-frequency",
+  "name": "Commit Frequency",
+  "description": "Measures how consistently you commit code over time",
+  "weight": 20,
+  "calculator": "calculateCommitFrequency",
+  "max": 20
+}

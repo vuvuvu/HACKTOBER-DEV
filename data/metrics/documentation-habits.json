@@ -1,0 +1,8 @@
+{
+  "id": "documentation-habits",
+  "name": "Documentation Habits",
+  "description": "Analyzes how often you update documentation",
+  "weight": 20,
+  "calculator": "calculateDocumentationHabits",
+  "max": 20
+}

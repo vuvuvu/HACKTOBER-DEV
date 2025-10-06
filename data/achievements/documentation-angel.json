@@ -1,0 +1,12 @@
+{
+  "id": "documentation-angel",
+  "title": "Documentation Angel",
+  "description": "You consistently update documentation with your code changes",
+  "requirement": {
+    "metric": "documentation-habits",
+    "value": 70,
+    "operator": ">="
+  },
+  "badge": "👼",
+  "category": "positive"
+}

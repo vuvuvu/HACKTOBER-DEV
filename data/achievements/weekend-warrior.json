@@ -1,0 +1,12 @@
+{
+  "id": "weekend-warrior",
+  "title": "Weekend Warrior",
+  "description": "Most of your commits happen on weekends",
+  "requirement": {
+    "metric": "work-consistency",
+    "value": 30,
+    "operator": "<="
+  },
+  "badge": "⚔️",
+  "category": "neutral"
+}

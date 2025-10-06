@@ -1,0 +1,12 @@
+{
+  "id": "code-stability-master",
+  "title": "Code Stability Master",
+  "description": "Your code churn ratio shows stable, iterative development",
+  "requirement": {
+    "metric": "code-churn",
+    "value": 60,
+    "operator": ">="
+  },
+  "badge": "⚖️",
+  "category": "positive"
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Profile Level Definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "description", "scoreRange", "criteria"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "scoreRange": {
+      "type": "object",
+      "required": ["min", "max"],
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "type": "number",
+          "description": "Inclusive minimum Hack Index score for this level."
+        },
+        "max": {
+          "type": "number",
+          "description": "Inclusive maximum Hack Index score for this level."
+        }
+      }
+    },
+    "criteria": {
+      "type": "object",
+      "description": "Additional aggregated metric thresholds for this level.",
+      "patternProperties": {
+        "^[a-zA-Z0-9_.-]+$": {
+          "type": "object",
+          "required": ["operator", "value"],
+          "additionalProperties": false,
+          "properties": {
+            "operator": {
+              "type": "string",
+              "enum": ["<", "<=", ">", ">="]
+            },
+            "value": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

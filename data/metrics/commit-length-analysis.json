@@ -1,0 +1,8 @@
+{
+  "id": "commit-length-analysis",
+  "name": "Commit Length Analysis",
+  "description": "Measures the average size of your commits to detect patterns",
+  "weight": 10,
+  "calculator": "calculateCommitLengthAnalysis",
+  "max": 10
+}

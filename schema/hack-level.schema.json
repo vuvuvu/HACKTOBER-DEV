@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Hack Level Definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "description", "criteria"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+$",
+      "description": "A unique identifier for this hack level (kebab‑case)."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human‑friendly name for the level."
+    },
+    "description": {
+      "type": "string",
+      "description": "A playful description of this level."
+    },
+    "criteria": {
+      "type": "object",
+      "description": "A map of metric thresholds that trigger this level.  Each key should be the metric name and the value an object specifying comparison operator and value.",
+      "patternProperties": {
+        "^[a-zA-Z0-9_.-]+$": {
+          "type": "object",
+          "required": ["operator", "value"],
+          "additionalProperties": false,
+          "properties": {
+            "operator": {
+              "type": "string",
+              "enum": ["<", "<=", ">", ">="]
+            },
+            "value": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

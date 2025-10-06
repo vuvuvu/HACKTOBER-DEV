@@ -1,0 +1,8 @@
+{
+  "id": "burst-work-pattern",
+  "name": "Burst Work Pattern",
+  "description": "Detects if you tend to work in intense bursts",
+  "weight": 20,
+  "calculator": "calculateBurstWorkPattern",
+  "max": 20
+}

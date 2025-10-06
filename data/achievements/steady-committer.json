@@ -1,0 +1,12 @@
+{
+  "id": "steady-committer",
+  "title": "Steady Committer",
+  "description": "You maintain consistent commit sizes without massive changes",
+  "requirement": {
+    "metric": "commit-length-analysis",
+    "value": 70,
+    "operator": ">="
+  },
+  "badge": "🎯",
+  "category": "positive"
+}

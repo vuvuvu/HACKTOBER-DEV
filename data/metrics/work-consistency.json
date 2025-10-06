@@ -1,0 +1,8 @@
+{
+  "id": "work-consistency",
+  "name": "Work Consistency",
+  "description": "Measures how evenly distributed your work is throughout the week",
+  "weight": 15,
+  "calculator": "calculateWorkConsistency",
+  "max": 15
+}

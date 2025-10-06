@@ -1,0 +1,12 @@
+{
+  "id": "early-bird",
+  "title": "Early Bird",
+  "description": "You do most of your coding before 9 AM",
+  "requirement": {
+    "metric": "time-of-day-analysis",
+    "value": 60,
+    "operator": ">="
+  },
+  "badge": "🌅",
+  "category": "neutral"
+}

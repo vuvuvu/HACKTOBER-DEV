@@ -1,0 +1,12 @@
+{
+  "id": "commit-zen-master",
+  "title": "Commit Zen Master",
+  "description": "Consistently write high-quality commit messages",
+  "requirement": {
+    "metric": "commit-message-quality",
+    "value": 80,
+    "operator": ">="
+  },
+  "badge": "🧘‍♂️",
+  "category": "positive"
+}

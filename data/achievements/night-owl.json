@@ -1,0 +1,12 @@
+{
+  "id": "night-owl",
+  "title": "Night Owl",
+  "description": "You do most of your coding after 9 PM",
+  "requirement": {
+    "metric": "time-of-day-analysis",
+    "value": 40,
+    "operator": "<="
+  },
+  "badge": "🦉",
+  "category": "neutral"
+}

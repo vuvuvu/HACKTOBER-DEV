@@ -1,0 +1,8 @@
+{
+  "id": "time-of-day-analysis",
+  "name": "Time of Day Analysis",
+  "description": "Identifies when you do most of your coding (morning person vs night owl)",
+  "weight": 10,
+  "calculator": "calculateTimeOfDayAnalysis",
+  "max": 10
+}

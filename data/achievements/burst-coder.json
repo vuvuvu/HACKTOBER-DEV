@@ -1,0 +1,12 @@
+{
+  "id": "burst-coder",
+  "title": "Burst Coder",
+  "description": "You tend to code in intense bursts rather than steady pace",
+  "requirement": {
+    "metric": "burst-work-pattern",
+    "value": 60,
+    "operator": ">="
+  },
+  "badge": "💥",
+  "category": "neutral"
+}
