@@ -160,6 +160,71 @@ npm run build
 npm run validate
 ```
 
+### 📦 Package Scripts
+
+The project includes several npm scripts for different development and release workflows:
+
+- **`npm run build`** - Compiles TypeScript to JavaScript in the `dist/` directory
+- **`npm run dev`** - Runs the CLI in development mode with hot reloading
+- **`npm start`** - Runs the built CLI from `dist/cli.js`
+- **`npm test`** - Executes the CLI with test flag for validation
+- **`npm run validate`** - Validates all JSON definitions and schemas
+- **`npm run prepublishOnly`** - Automatically runs build and validation before publishing
+- **`npm version [patch|minor|major]`** - Bumps version, builds, and commits changes
+- **`npm run postversion`** - Automatically pushes version tags to git remote
+
+### 🚀 Release Process
+
+This project uses automated semantic versioning and publishing:
+
+#### For Maintainers:
+
+1. **Create a new version:**
+   ```bash
+   # For bug fixes
+   npm version patch
+   
+   # For new features
+   npm version minor
+   
+   # For breaking changes
+   npm version major
+   ```
+
+2. **Create a GitHub Release:**
+   - Go to GitHub → Releases → "Create a new release"
+   - Use the version tag created by `npm version` (e.g., `v0.2.0`)
+   - Add release notes describing changes
+   - Publish the release
+
+3. **Automated Publishing:**
+   - GitHub Actions will automatically build and publish to npm
+   - The package will be available via `npx hacktober-dev`
+
+#### For Contributors:
+
+- All contributions go through pull requests to `main` branch
+- CI automatically builds and tests all changes
+- Maintainers handle versioning and releases
+- See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines
+
+### 🔄 CI/CD Pipeline
+
+The project includes automated workflows:
+
+- **CI Workflow** (`.github/workflows/ci.yml`):
+  - Runs on every push and pull request to `main`
+  - Tests Node.js build process
+  - Validates all JSON definitions
+  - Ensures code quality before merging
+
+- **Publish Workflow** (`.github/workflows/publish.yml`):
+  - Triggers automatically on GitHub releases
+  - Builds the project from source
+  - Runs validation checks
+  - Publishes to npm registry
+  - Requires `NPM_TOKEN` secret in repository settings
+
 ## 🎭 Philosophy
 
 This tool celebrates the spectrum of development styles. Whether you're a methodical architect or a spontaneous maverick, there's value in understanding your natural hackiness level. Use this insight to:

@@ -28,6 +28,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Created GitHub Actions workflow for automated npm publishing on releases
 - Set up proper semantic versioning workflow with git tag automation
 
+### 📚 Documentation
+- Enhanced README.md with comprehensive package scripts documentation
+- Added detailed release process instructions for maintainers and contributors
+- Created dedicated RELEASE_GUIDE.md with step-by-step release instructions
+- Added DEVELOPMENT_SETUP.md for contributor onboarding and local development
+- Documented CI/CD pipeline and automated publishing workflow
+
 ## [1.0.0] - 2025-10-06
 
 ### ✨ Added
