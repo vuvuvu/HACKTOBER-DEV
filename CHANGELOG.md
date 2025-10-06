@@ -15,8 +15,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### ✨ Initial Commit
-- Initial commit of the Hacktober Dev CLI tool.
+## [1.0.0] - 2025-10-06
+
+### ✨ Added
+- Initial release of Hacktober Dev CLI tool
+- Comprehensive developer hackiness analysis with 9 achievement types
+- 8 different metrics calculators for analyzing coding patterns
+- TypeScript implementation with full type definitions
+- JSON schema validation for data integrity
+- Sample repository for testing the tool
+- Detailed documentation and contribution guidelines
+- Support for analyzing Git repositories and measuring developer "hackiness"
 
 ### 🎯 Focus Shift
 - **BREAKING**: Transformed from GitHub App to dedicated CLI hackiness measurement tool
