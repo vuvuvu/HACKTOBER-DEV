@@ -78,6 +78,8 @@ Edit insight messages in metric files to be more fun and encouraging:
 
 #### 1. **Create New Hackiness Metrics**
 
+See the step‑by‑step authoring guide: `docs/METRICS_AUTHORING_GUIDE.md`.
+
 Add a new calculator in `src/calculators/`. Here's the structure:
 
 ```typescript
